@@ -6,5 +6,6 @@ function Toggle() {
     function handleClick() {
         setIsOn((isOn) => !isOn);
     }
+    const color = isOn ? "red" : "white";
 
     export default Toggle;
