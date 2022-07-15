@@ -7,5 +7,10 @@ function Toggle() {
         setIsOn((isOn) => !isOn);
     }
     const color = isOn ? "red" : "white";
+    const status = isOn ? "ON" : "OFF"
+    return <button style = {
+        { background: color } }
+    onClick = { handleClick } > { status } < /button>;
+}
 
-    export default Toggle;
+export default Toggle;
